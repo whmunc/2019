@@ -54,6 +54,3 @@ function getQueryVariable(variable) {
     return (false);
 }
 
-window.onload = dynamicChangeName(){
-    document.title = "2019武汉会 - 代表信息 - " + del_name;
-}
