@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
+    <meta name="description" content="This page provides delegates and stuff an easy accessment to their data.">
+    <meta name="author" content="WHMUNC 2019">
+
+    <title>2019武汉会 - 代表信息</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/editor.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/narrow-jumbotron.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.11.1/dist/av-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leancloud-realtime@4.2.1/dist/realtime.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leancloud-storage@3.11.1/dist/av-live-query-min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="js/utilities.js"></script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="manifest/apple-touch-icon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="manifest/apple-touch-icon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="manifest/apple-touch-icon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="manifest/apple-touch-icon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="manifest/apple-touch-icon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="manifest/apple-touch-icon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="manifest/apple-touch-icon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="manifest/apple-touch-icon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="manifest/apple-touch-icon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="manifest/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="manifest/favicon/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="manifest/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="manifest/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="manifest/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="manifest/manifest.json">
+    <meta name="msapplication-TileColor" content="#72b5ff">
+    <meta name="msapplication-TileImage" content="manifest/mstile-144x144.png">
+    <meta name="theme-color" content="#4289C8">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header clearfix">
+            <h3 class="text-muted">武汉模拟联合国大会</h3>
+        </div>
+
+        <div class="jumbotron"><img src="images/19WHMUNC-1@0,5x.png" height="117" width="195" style="">
+            <h1 class="display-3"></h1>
+            <p class="lead"><span class=" badge badge-primary" style="">Hitokoto</span><span> </span><span style="color: rgb(0, 0, 0); font-family: &quot;Microsoft YaHei&quot;; font-size: medium; text-align: start;"
+                    id="hitokoto">Now
+                    loading...</span></p>
+            <p class="lead">以下为<span id=u_name>John Doe</span>的基础个人信息<span class="badge badge-primary" style=""></span></p>
+            <p></p>
+            <table class="table" style="">
+                <thead>
+                    <tr>
+                        <th>姓名</th>
+                        <th>学校</th>
+                        <th>手机号</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span id=co_name>John Doe</span></td>
+                        <td><span id=u_school>Otto</span></td>
+                        <td><span id=u_phone>139029138201</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="alert alert-danger fade show" role="alert" style=""> <strong>特别提醒:</strong>&nbsp;如果您不愿意在二维码中公开手机号，请联系组委进行模糊化处理。<div>请注意保护二维码，并确保对方获取信息是您所允许的。<div>为保护您的个人隐私，会期结束本二维码将会自动失效。</div>
+            </div>
+        </div>
+        <div class="row marketing">
+            <div class="col-lg-12">
+                <hr style="">
+                <div class="container" style="min-height: 150px;">
+                    <div class="m-8" style="text-align: center;">
+                        <div style="text-align: left;">如果你是组委/学团成员, 推荐使用微信关注“简道云”服务号, 绑定凭据并扫描. 请点击下面的按钮登录, 访问代表的更多信息. 
+                        </div>
+                        <p></p><button type="button" class="btn btn-primary" style="font-weight: 600;" onclick="login_jump()">登录</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>© WHMUNC 2019, All rights Reserved. Hitokoto API Provided by&nbsp;https://hitokoto.cn/</p>
+            <p>Any questions? Feel free to ask for support: ding.yuxiao@whmun.com</p>
+        </footer>
+
+    </div> <!-- /container -->
+
+</body>
+
+</html>
