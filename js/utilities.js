@@ -1,6 +1,7 @@
 var APP_ID = 'NVSqkDBloWJ2VX1WBgLhH4RF-gzGzoHsz';
 var APP_KEY = 'PElcj8eR8eEXhbhGKVAF56nc';
 var login_url = '';
+var del_name = '';
 var user_id = getQueryVariable('uid');
 AV.init({
     appId: APP_ID,
@@ -22,6 +23,7 @@ delegateData.fetch().then( function writeBack(){
     u_phone.innerText = delegateData.get('phone');
 
     login_url = delegateData.get('backend_url');
+    del_name = delegateData.get('name');
 })
 
 function login_jump(){
@@ -50,4 +52,8 @@ function getQueryVariable(variable) {
         }
     }
     return (false);
+}
+
+window.onload = dynamicChangeName(){
+    document.title = "2019武汉会 - 代表信息 - " + del_name;
 }
