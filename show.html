@@ -100,8 +100,11 @@
 
 </body>
 <script>
-    window.onload = dynamicChangeName(){
-    document.title = "2019武汉会 - 代表信息 - " + del_name;
+    window.onload = function (){
+        function dynamicChange (){
+            var del_name = document.getElementById('u_name');
+            document.title = "2019武汉会 - 代表信息 - " + del_name;
+        }
 }
 </script>
 
