@@ -31,7 +31,7 @@ this.addEventListener('fetch', function (event) {
                 }
 
                 var responseClone = httpRes.clone();
-                caches.open('my-test-cache-v1').then(function (cache) {
+                caches.open('static-cache').then(function (cache) {
                     cache.put(event.request, responseClone);
                 });
 
