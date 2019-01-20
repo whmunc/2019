@@ -1,10 +1,10 @@
 {
     "name": "WHMUNC Delegate Infomation Page",
-    "short_name": "WHMUNCDIP",
+    "short_name": "2019武汉会代表信息",
     "display": "fullscreen",
     "background_color": "#72b5ff",
     "theme_color": "#4289C8",
-    "description": "This page provides delegates and stuff an easy accessment to their data.",
+    "description": "为代表和主席团/组委提供一个快捷访问信息的通道。",
     "icons": [{
             "src": "android-chrome-36x36.png",
             "sizes": "36x36",

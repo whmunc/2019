@@ -55,12 +55,12 @@ function getQueryVariable(variable) {
 //Service Worker
 if('serviceWorker' in navigator){
     window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/js/worker.js', {scope: '/'})
+        navigator.serviceWorker.register('/js/sworker.js', {scope: '/'})
             .then(function (registeration) {
-                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                console.log('◕‿◕', registration.scope);
             })
             .catch(function (error) {
-                console.log('ServiceWorker registration failed: ', err);
+                console.log('ಠ_ಠ', err);
             });
     });
 }

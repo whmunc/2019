@@ -78,3 +78,27 @@ body {
     border-bottom: 0;
   }
 }
+
+@media all and (display-mode: fullscreen) {
+    body {
+        margin: 0;
+    }
+}
+
+@media all and (display-mode: standalone) {
+    body {
+        margin: 1px;
+    }
+}
+
+@media all and (display-mode: minimal-ui) {
+    body {
+        margin: 2px;
+    }
+}
+
+@media all and (display-mode: browser) {
+    body {
+        margin: 3px;
+    }
+}
