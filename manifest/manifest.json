@@ -1,7 +1,7 @@
 {
     "name": "WHMUNC Delegate Infomation Page",
     "short_name": "WHMUNCDIP",
-    "display": "standalone",
+    "display": "fullscreen",
     "background_color": "#72b5ff",
     "theme_color": "#4289C8",
     "description": "This page provides delegates and stuff an easy accessment to their data.",
