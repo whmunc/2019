@@ -19,7 +19,7 @@ this.addEventListener('fetch', function (event) {
         caches.match(event.request).then(function (response) {
 
             if (response) {
-                return httpRes;
+                return response;
             }
 
             var request = event.request.clone();
