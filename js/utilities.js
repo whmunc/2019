@@ -35,6 +35,7 @@ fetch('https://v1.hitokoto.cn/?charset=UTF-8&c=d')
 .then(function (data) {
     var hitokoto = document.getElementById('hitokoto');
     hitokoto.innerText = data.hitokoto;
+    hitokoto1.innerText = data.hitokoto;
 })
 .catch(function (err) {
     console.error(err);
