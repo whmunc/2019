@@ -5,6 +5,11 @@ self.addEventListener('install', function(event) {
         caches.open('static-cache').then(function (cache) {
             return cache.addAll([
                 '/',
+                '/show.html',
+                '/manifest/favicon-16x16.png',
+                '/manifest/favicon-96x96.png',
+                '/manifest/android-chrome-192x192.png',
+                '/manifest/favicon-194x194.png',
                 '/css/editor.css',
                 '/css/narrow-jumbotron.css',
                 '/images/19WHMUNC-1@0,5x.png',
