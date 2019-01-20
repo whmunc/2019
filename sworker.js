@@ -4,8 +4,6 @@ self.addEventListener('install', function(event) {
     event.waitUntil(
         caches.open('static-cache').then(function (cache) {
             return cache.addAll([
-                '/',
-                'show.html',
                 '/css/editor.css',
                 '/css/narrow-jumbotron.css',
                 '/images/19WHMUNC-1@0,5x.png',
