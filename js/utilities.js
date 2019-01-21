@@ -35,7 +35,6 @@ fetch('https://v1.hitokoto.cn/?charset=UTF-8&c=d')
 .then(function (data) {
     var hitokoto = document.getElementById('hitokoto');
     hitokoto.innerText = data.hitokoto;
-    hitokoto1.innerText = data.hitokoto;
 })
 .catch(function (err) {
     console.error(err);
@@ -58,10 +57,10 @@ if('serviceWorker' in navigator){
     window.addEventListener('load', function() {
         navigator.serviceWorker.register('/sworker.js', {scope: '/'})
             .then(function (registeration) {
-                console.log('◕‿◕');
+                console.log('◕‿◕ Registered Successfully.');
             })
             .catch(function (error) {
-                console.log('ಠ_ಠ');
+                console.log('ಠ_ಠ Something wrong when starting, please help us debug.');
             });
     });
 }
